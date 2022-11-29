@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E12708202936CCF30021B186 /* VKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E127081F2936CCF30021B186 /* VKViewController.swift */; };
 		E17D4E32292E47F100253FE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17D4E31292E47F100253FE7 /* AppDelegate.swift */; };
 		E17D4E34292E47F100253FE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17D4E33292E47F100253FE7 /* SceneDelegate.swift */; };
 		E17D4E36292E47F100253FE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17D4E35292E47F100253FE7 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E127081F2936CCF30021B186 /* VKViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKViewController.swift; sourceTree = "<group>"; };
 		E17D4E2E292E47F100253FE7 /* VK GU_IOS_2930.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VK GU_IOS_2930.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E17D4E31292E47F100253FE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E17D4E33292E47F100253FE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				E17D4E31292E47F100253FE7 /* AppDelegate.swift */,
 				E17D4E33292E47F100253FE7 /* SceneDelegate.swift */,
 				E17D4E35292E47F100253FE7 /* ViewController.swift */,
+				E127081F2936CCF30021B186 /* VKViewController.swift */,
 				E17D4E37292E47F100253FE7 /* Main.storyboard */,
 				E17D4E3A292E47F500253FE7 /* Assets.xcassets */,
 				E17D4E3C292E47F500253FE7 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E17D4E36292E47F100253FE7 /* ViewController.swift in Sources */,
+				E12708202936CCF30021B186 /* VKViewController.swift in Sources */,
 				E17D4E32292E47F100253FE7 /* AppDelegate.swift in Sources */,
 				E17D4E34292E47F100253FE7 /* SceneDelegate.swift in Sources */,
 			);
