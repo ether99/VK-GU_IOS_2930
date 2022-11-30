@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VK_GU_IOS_2930" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="VKViewController" customModule="VK_GU_IOS_2930" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -80,7 +80,7 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="MKP-ec-2wO" secondAttribute="trailing" constant="-26.666666666666686" id="0gT-Zi-vvO"/>
                                     <constraint firstItem="yZK-8m-edB" firstAttribute="leading" secondItem="WkW-in-dIb" secondAttribute="leading" id="3Xu-7y-GT8"/>
-                                    <constraint firstItem="MKP-ec-2wO" firstAttribute="top" secondItem="Agv-NE-8Xb" secondAttribute="bottom" constant="107" id="3pr-lF-iWx"/>
+                                    <constraint firstItem="MKP-ec-2wO" firstAttribute="top" secondItem="srP-XA-Ub7" secondAttribute="top" constant="455" id="6fT-4Q-NyN"/>
                                     <constraint firstItem="WkW-in-dIb" firstAttribute="trailing" secondItem="yZK-8m-edB" secondAttribute="trailing" id="9l2-Rd-YYK"/>
                                     <constraint firstItem="MKP-ec-2wO" firstAttribute="leading" secondItem="WkW-in-dIb" secondAttribute="leading" constant="20" id="ALR-gb-d6y"/>
                                     <constraint firstItem="MKP-ec-2wO" firstAttribute="leading" secondItem="srP-XA-Ub7" secondAttribute="leading" constant="20" symbolic="YES" id="Bmm-a4-gbk"/>
