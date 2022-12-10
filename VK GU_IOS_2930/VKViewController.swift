@@ -33,7 +33,7 @@ class VKViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(willHideKeyboard), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     @objc func willShowKeyboard(_ notification: Notification) {
-        print(#function)
+     
         
         guard let info = notification.userInfo as NSDictionary?,
               let keyboardSize = info.value(forKey: UIResponder.keyboardFrameEndUserInfoKey) as?
@@ -44,7 +44,7 @@ class VKViewController: UIViewController {
     }
     
     @objc func willHideKeyboard(_ notification: Notification) {
-        print(#function)
+    
         
         scrollView.contentInset = .zero
     }
@@ -56,7 +56,20 @@ class VKViewController: UIViewController {
         guard let login = loginTextField.text,
               let password = passwordTextField.text,
               login == "",
-        password == "" else {return}
+              password == "" else {
+            let alert = UIAlertController(title: "Error", message: "Error login/password", preferredStyle: .alert)
+            
+            let okButton = UIAlertAction(title: "OK", style: .default) {_ in
+                self .loginTextField.text?.removeAll()
+                self.passwordTextField.text = ""
+            }
+            
+            alert.addAction(okButton)
+            present (alert, animated: true,completion: nil)
+            
+            return
+        
+    }
         
         performSegue(withIdentifier: "Login", sender: nil)
         
