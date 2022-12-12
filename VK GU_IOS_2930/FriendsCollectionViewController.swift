@@ -60,6 +60,12 @@ class FriendsCollectionViewController: UICollectionViewController {
         return cell
     }
 
+    
+    
+    
+    
+    
+    
     // MARK: UICollectionViewDelegate
 
     /*

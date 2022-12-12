@@ -24,6 +24,8 @@
 		E17D4E39292E47F100253FE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E17D4E37292E47F100253FE7 /* Main.storyboard */; };
 		E17D4E3B292E47F500253FE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E17D4E3A292E47F500253FE7 /* Assets.xcassets */; };
 		E17D4E3E292E47F500253FE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E17D4E3C292E47F500253FE7 /* LaunchScreen.storyboard */; };
+		E1B357E429474A9D00280B5B /* avatarUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B357E329474A9D00280B5B /* avatarUIView.swift */; };
+		E1B357E62947594C00280B5B /* LikeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B357E52947594C00280B5B /* LikeControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		E17D4E3A292E47F500253FE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E17D4E3D292E47F500253FE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E17D4E3F292E47F500253FE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1B357E329474A9D00280B5B /* avatarUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = avatarUIView.swift; sourceTree = "<group>"; };
+		E1B357E52947594C00280B5B /* LikeControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				E122420929428B58004AB6A5 /* CollectionView */,
 				E122420029427712004AB6A5 /* TableViewController */,
 				E17D4E37292E47F100253FE7 /* Main.storyboard */,
+				E1B357E52947594C00280B5B /* LikeControl.swift */,
+				E1B357E329474A9D00280B5B /* avatarUIView.swift */,
 				E17D4E3A292E47F500253FE7 /* Assets.xcassets */,
 				E17D4E3C292E47F500253FE7 /* LaunchScreen.storyboard */,
 				E17D4E3F292E47F500253FE7 /* Info.plist */,
@@ -189,6 +195,7 @@
 			files = (
 				E17D4E36292E47F100253FE7 /* ViewController.swift in Sources */,
 				E148CA0C293A70FD006F5DEC /* UIViewController + Extension.swift in Sources */,
+				E1B357E62947594C00280B5B /* LikeControl.swift in Sources */,
 				E12708202936CCF30021B186 /* VKViewController.swift in Sources */,
 				E12877A1293E5D8A000D7DA0 /* FriendCell.swift in Sources */,
 				E12241FF2942767D004AB6A5 /* FriendTableViewCell.swift in Sources */,
@@ -199,6 +206,7 @@
 				E128779F293E0E74000D7DA0 /* AllFriendController.swift in Sources */,
 				E122420629428AC4004AB6A5 /* FriendCollectionViewCell.swift in Sources */,
 				E122420429428A66004AB6A5 /* FriendsCollectionViewController.swift in Sources */,
+				E1B357E429474A9D00280B5B /* avatarUIView.swift in Sources */,
 				E17D4E32292E47F100253FE7 /* AppDelegate.swift in Sources */,
 				E17D4E34292E47F100253FE7 /* SceneDelegate.swift in Sources */,
 			);

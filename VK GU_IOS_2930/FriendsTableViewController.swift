@@ -64,7 +64,4 @@ class FriendsTableViewController: UITableViewController {
             destinationVC.arrayFriend = myFriends[indexPath.row].friends
         }
     }
-    
-    
-    
 }

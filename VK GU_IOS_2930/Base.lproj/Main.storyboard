@@ -216,27 +216,50 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nKt-Px-epF">
-                                            <rect key="frame" x="20" y="10" width="100" height="100"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n8k-YJ-qFB" customClass="avatarUIView" customModule="VK_GU_IOS_2930" customModuleProvider="target">
+                                            <rect key="frame" x="20" y="0.0" width="120" height="120"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MKE-aB-G74">
+                                                    <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                </view>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rSD-m7-vMy">
+                                                    <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="100" id="1wf-f3-9b6"/>
-                                                <constraint firstAttribute="width" secondItem="nKt-Px-epF" secondAttribute="height" multiplier="1:1" id="VdD-H1-LrN"/>
+                                                <constraint firstAttribute="trailing" secondItem="MKE-aB-G74" secondAttribute="trailing" id="5Bp-O0-oby"/>
+                                                <constraint firstAttribute="height" constant="120" id="FJA-4k-kvJ"/>
+                                                <constraint firstAttribute="bottom" secondItem="rSD-m7-vMy" secondAttribute="bottom" id="GXT-8L-2hP"/>
+                                                <constraint firstItem="rSD-m7-vMy" firstAttribute="top" secondItem="n8k-YJ-qFB" secondAttribute="top" id="QiM-tb-XwN"/>
+                                                <constraint firstItem="rSD-m7-vMy" firstAttribute="leading" secondItem="n8k-YJ-qFB" secondAttribute="leading" id="UG8-E8-J33"/>
+                                                <constraint firstItem="MKE-aB-G74" firstAttribute="leading" secondItem="n8k-YJ-qFB" secondAttribute="leading" id="auy-82-FdJ"/>
+                                                <constraint firstAttribute="width" secondItem="n8k-YJ-qFB" secondAttribute="height" multiplier="1:1" id="dNn-zz-TrT"/>
+                                                <constraint firstItem="MKE-aB-G74" firstAttribute="top" secondItem="n8k-YJ-qFB" secondAttribute="top" id="gg1-YC-1Zs"/>
+                                                <constraint firstAttribute="bottom" secondItem="MKE-aB-G74" secondAttribute="bottom" id="jVR-XK-LfU"/>
+                                                <constraint firstAttribute="trailing" secondItem="rSD-m7-vMy" secondAttribute="trailing" id="n7E-Ed-euy"/>
                                             </constraints>
-                                        </imageView>
+                                            <connections>
+                                                <outlet property="avatarImageView" destination="rSD-m7-vMy" id="K32-EM-pQg"/>
+                                                <outlet property="shadowView" destination="MKE-aB-G74" id="1MV-ka-OyR"/>
+                                            </connections>
+                                        </view>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="bWI-qs-cp9" firstAttribute="centerY" secondItem="nKt-Px-epF" secondAttribute="centerY" id="Bus-b3-OaQ"/>
-                                        <constraint firstItem="nKt-Px-epF" firstAttribute="top" secondItem="YsO-O6-edI" secondAttribute="top" constant="10" id="Hlk-Fg-92Y"/>
-                                        <constraint firstItem="nKt-Px-epF" firstAttribute="leading" secondItem="YsO-O6-edI" secondAttribute="leading" constant="20" id="Lkm-Bs-W2S"/>
-                                        <constraint firstItem="bWI-qs-cp9" firstAttribute="leading" secondItem="nKt-Px-epF" secondAttribute="trailing" constant="40" id="ZDa-dl-orC"/>
-                                        <constraint firstAttribute="bottom" secondItem="nKt-Px-epF" secondAttribute="bottom" constant="10" id="xZz-Kp-EhB"/>
+                                        <constraint firstItem="n8k-YJ-qFB" firstAttribute="leading" secondItem="YsO-O6-edI" secondAttribute="leading" constant="20" id="CEH-x0-un4"/>
+                                        <constraint firstItem="n8k-YJ-qFB" firstAttribute="top" secondItem="YsO-O6-edI" secondAttribute="top" id="D0d-Z3-olR"/>
+                                        <constraint firstItem="bWI-qs-cp9" firstAttribute="leading" secondItem="rSD-m7-vMy" secondAttribute="trailing" constant="20" id="Esl-Pd-xXc"/>
+                                        <constraint firstItem="bWI-qs-cp9" firstAttribute="centerY" secondItem="rSD-m7-vMy" secondAttribute="centerY" id="QJj-1y-939"/>
+                                        <constraint firstAttribute="bottom" secondItem="n8k-YJ-qFB" secondAttribute="bottom" id="hUT-tT-8Dy"/>
+                                        <constraint firstItem="n8k-YJ-qFB" firstAttribute="centerY" secondItem="YsO-O6-edI" secondAttribute="centerY" id="lqq-Zd-x5m"/>
                                         <constraint firstAttribute="trailing" secondItem="bWI-qs-cp9" secondAttribute="trailing" constant="20" id="ybe-D0-P0N"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="imageAvatar" destination="nKt-Px-epF" id="sby-2w-Bmc"/>
+                                    <outlet property="imageAvatar" destination="rSD-m7-vMy" id="6qG-aB-tBS"/>
                                     <outlet property="nameLabel" destination="bWI-qs-cp9" id="lSz-9l-YQ5"/>
-                                    <segue destination="tlB-al-hGo" kind="show" id="JZu-43-w38"/>
+                                    <segue destination="tlB-al-hGo" kind="show" identifier="segueCollectionFriends" id="JZu-43-w38"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -266,7 +289,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionFriend" id="fQM-8f-mzy" customClass="FriendCollectionViewCell" customModule="VK_GU_IOS_2930" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionFriends" id="fQM-8f-mzy" customClass="FriendCollectionViewCell" customModule="VK_GU_IOS_2930" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="160" height="143"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="MmO-QR-yZ4">
@@ -276,7 +299,9 @@
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7kU-8z-Yrl">
                                             <rect key="frame" x="0.0" y="0.0" width="160" height="83"/>
                                             <constraints>
+                                                <constraint firstAttribute="width" constant="160" id="Xco-Q2-LC0"/>
                                                 <constraint firstAttribute="height" constant="83" id="e06-Ss-DyK"/>
+                                                <constraint firstAttribute="width" secondItem="7kU-8z-Yrl" secondAttribute="height" multiplier="1:1" id="snb-Zw-eZp"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oUj-IV-ofB">
@@ -285,21 +310,44 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tmQ-ck-Ta3" customClass="LikeControl" customModule="VK_GU_IOS_2930" customModuleProvider="target">
+                                            <rect key="frame" x="120" y="103" width="40" height="40"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eE5-Kp-WgO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="eE5-Kp-WgO" secondAttribute="trailing" id="Iqg-rW-YDw"/>
+                                                <constraint firstItem="eE5-Kp-WgO" firstAttribute="top" secondItem="tmQ-ck-Ta3" secondAttribute="top" id="JzY-6b-atR"/>
+                                                <constraint firstAttribute="bottom" secondItem="eE5-Kp-WgO" secondAttribute="bottom" id="M3z-EZ-fxK"/>
+                                                <constraint firstAttribute="width" secondItem="tmQ-ck-Ta3" secondAttribute="height" multiplier="1:1" id="Tv2-qi-t1q"/>
+                                                <constraint firstItem="eE5-Kp-WgO" firstAttribute="leading" secondItem="tmQ-ck-Ta3" secondAttribute="leading" id="doI-yS-CD6"/>
+                                                <constraint firstAttribute="height" constant="40" id="eUR-lV-ADM"/>
+                                            </constraints>
+                                            <connections>
+                                                <outlet property="likePicture" destination="eE5-Kp-WgO" id="qk5-dN-Xuu"/>
+                                            </connections>
+                                        </view>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="oUj-IV-ofB" firstAttribute="centerX" secondItem="MmO-QR-yZ4" secondAttribute="centerX" id="P70-JB-mNC"/>
-                                        <constraint firstAttribute="trailing" secondItem="oUj-IV-ofB" secondAttribute="trailing" constant="20" id="SLc-Cb-lnq"/>
-                                        <constraint firstAttribute="trailing" secondItem="7kU-8z-Yrl" secondAttribute="trailing" id="Sl1-WP-Kaw"/>
-                                        <constraint firstItem="oUj-IV-ofB" firstAttribute="leading" secondItem="MmO-QR-yZ4" secondAttribute="leading" constant="20" id="UP6-Sp-wyO"/>
-                                        <constraint firstItem="7kU-8z-Yrl" firstAttribute="leading" secondItem="MmO-QR-yZ4" secondAttribute="leading" id="Zlk-Vp-AwE"/>
-                                        <constraint firstItem="7kU-8z-Yrl" firstAttribute="top" secondItem="MmO-QR-yZ4" secondAttribute="top" id="g3A-7s-YwJ"/>
-                                        <constraint firstItem="oUj-IV-ofB" firstAttribute="top" secondItem="7kU-8z-Yrl" secondAttribute="bottom" constant="21" id="ja5-KR-GmE"/>
-                                        <constraint firstAttribute="bottom" secondItem="oUj-IV-ofB" secondAttribute="bottom" constant="18" id="lH8-e9-3DF"/>
+                                        <constraint firstItem="oUj-IV-ofB" firstAttribute="centerX" secondItem="MmO-QR-yZ4" secondAttribute="centerX" multiplier="1:1" id="P70-JB-mNC"/>
+                                        <constraint firstAttribute="trailing" secondItem="oUj-IV-ofB" secondAttribute="trailing" multiplier="1:1" constant="20" id="SLc-Cb-lnq"/>
+                                        <constraint firstAttribute="trailing" secondItem="7kU-8z-Yrl" secondAttribute="trailing" multiplier="1:1" id="Sl1-WP-Kaw"/>
+                                        <constraint firstItem="oUj-IV-ofB" firstAttribute="leading" secondItem="MmO-QR-yZ4" secondAttribute="leading" multiplier="1:1" constant="20" id="UP6-Sp-wyO"/>
+                                        <constraint firstItem="7kU-8z-Yrl" firstAttribute="leading" secondItem="MmO-QR-yZ4" secondAttribute="leading" multiplier="1:1" id="Zlk-Vp-AwE"/>
+                                        <constraint firstAttribute="trailing" secondItem="tmQ-ck-Ta3" secondAttribute="trailing" id="eS3-p3-0Ol"/>
+                                        <constraint firstItem="7kU-8z-Yrl" firstAttribute="top" secondItem="MmO-QR-yZ4" secondAttribute="top" multiplier="1:1" id="g3A-7s-YwJ"/>
+                                        <constraint firstItem="oUj-IV-ofB" firstAttribute="top" secondItem="7kU-8z-Yrl" secondAttribute="bottom" multiplier="1:1" constant="21" id="ja5-KR-GmE"/>
+                                        <constraint firstAttribute="bottom" secondItem="oUj-IV-ofB" secondAttribute="bottom" multiplier="1:1" constant="18" id="lH8-e9-3DF"/>
+                                        <constraint firstAttribute="bottom" secondItem="tmQ-ck-Ta3" secondAttribute="bottom" id="oue-O4-eTH"/>
                                     </constraints>
                                 </collectionViewCellContentView>
                                 <size key="customSize" width="160" height="143"/>
                                 <connections>
+                                    <outlet property="container" destination="MmO-QR-yZ4" id="WQx-4a-HVH"/>
                                     <outlet property="imageAvatar" destination="7kU-8z-Yrl" id="5bd-CL-JtQ"/>
+                                    <outlet property="likeControl" destination="tmQ-ck-Ta3" id="OC6-v9-daN"/>
                                     <outlet property="nameLabel" destination="oUj-IV-ofB" id="LuN-eQ-VLO"/>
                                 </connections>
                             </collectionViewCell>
